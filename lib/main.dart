@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Meals App',
+      title: 'HoopsHub',
       theme: theme,
       home: const Center()
     );
