@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +11,13 @@ final theme = ThemeData(
     seedColor: Colors.greenAccent,
     brightness: Brightness.dark
   ),
-  // textTheme: GoogleFonts.montserratTextTheme()
+  textTheme: GoogleFonts.ralewayTextTheme(),
+  appBarTheme: AppBarTheme(
+    backgroundColor: Colors.greenAccent,
+    titleTextStyle: GoogleFonts.poppins(),
+    actionsIconTheme: const IconThemeData(color: Colors.white),
+    iconTheme: const IconThemeData(color: Colors.white),
+  ),
 );
 
 
