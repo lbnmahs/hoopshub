@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hoopshub/tabs.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,7 @@ final theme = ThemeData(
   ),
   textTheme: GoogleFonts.ralewayTextTheme(),
   appBarTheme: AppBarTheme(
+    centerTitle: true,
     backgroundColor: Colors.greenAccent,
     titleTextStyle: GoogleFonts.poppins(),
     actionsIconTheme: const IconThemeData(color: Colors.white),
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'HoopsHub',
       theme: theme,
-      home: const Center()
+      home: const Tabs()
     );
   }
 }
