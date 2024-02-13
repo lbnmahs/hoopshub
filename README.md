@@ -19,7 +19,7 @@ To run the application, run the following commands
 
 3. Install dependencies
     ```dart
-       flutter pub add http, google_fonts, transparent_image, flutter_riverpod
+       flutter pub add http, google_fonts, transparent_image, flutter_bloc
     ```
 
 4. Run the application
