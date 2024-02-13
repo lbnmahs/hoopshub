@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hoopshub/presentation/screens/home_tab.dart';
+import 'package:hoopshub/views/screens/home_tab.dart';
 
 void main() {
   runApp(const MyApp());
