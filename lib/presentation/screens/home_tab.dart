@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Tabs extends StatefulWidget {
-  const Tabs({super.key});
+class HomeTab extends StatefulWidget {
+  const HomeTab({super.key});
   @override
-  State<Tabs> createState() {
-    return _TabsState();
+  State<HomeTab> createState() {
+    return _HomeTabState();
   }
 }
 
-class _TabsState extends State<Tabs> {
+class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

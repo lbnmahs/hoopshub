@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hoopshub/tabs.dart';
+import 'package:hoopshub/presentation/screens/home_tab.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'HoopsHub',
       theme: theme,
-      home: const Tabs()
+      home: const HomeTab()
     );
   }
 }
