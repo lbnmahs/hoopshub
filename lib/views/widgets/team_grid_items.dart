@@ -10,21 +10,26 @@ class TeamGridItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: Column(
-        children: [
-          CircleAvatar(
-            radius: 30,
-            backgroundImage: NetworkImage(team.logo),
-          ),
-          Text(
+    return Card(
+      margin: const EdgeInsets.all(8),
+      elevation: 5,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10)
+      ),
+      child: InkWell(
+        onTap: onTeamSelect,
+        borderRadius: BorderRadius.circular(15),
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Text(
             team.name,
-            style: Theme.of(context).textTheme.displayMedium!.copyWith(
+            style: Theme.of(context).textTheme.bodyMedium!.copyWith(
               color: Theme.of(context).colorScheme.onBackground,
-            )
+              fontSize: 16,
+              fontWeight: FontWeight.w500
+            ),
           ),
-        ],
+        ),
       ),
     );
   }

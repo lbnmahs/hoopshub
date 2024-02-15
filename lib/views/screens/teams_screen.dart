@@ -10,20 +10,11 @@ class TeamsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView(
-      padding: const EdgeInsets.all(15),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
-        childAspectRatio: 3/2,
-        crossAxisSpacing: 15,
-        mainAxisSpacing: 20
-      ),
-      children: teams.map(
-        (team) => TeamGridItem(
-          team: team,
-          onTeamSelect: () {}
-        )
-      ).toList(),
+    return ListView.builder(
+      itemCount: teams.length,
+      itemBuilder: (context, index) {
+        return TeamGridItem(team: teams[index], onTeamSelect: () {});
+      }
     );
   }
 }

@@ -14,7 +14,7 @@ void main() {
 final theme = ThemeData(
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
-    seedColor: Colors.greenAccent,
+    seedColor: Colors.blue,
     brightness: Brightness.dark
   ),
   textTheme: GoogleFonts.ralewayTextTheme(),

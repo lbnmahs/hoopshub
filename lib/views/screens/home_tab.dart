@@ -19,7 +19,7 @@ class _HomeTabState extends State<HomeTab> {
     super.initState();
     context.read<TeamsBloc>().add(TeamsFetched());
   }
-  
+
   void _selectTab(int index) {
     setState(() { _currentIndex = index; });
   }
@@ -33,22 +33,19 @@ class _HomeTabState extends State<HomeTab> {
       ),
       body: BlocBuilder<TeamsBloc, TeamsState>(
         builder: ((context, state) {
-          // Make sure to define TeamFailure before TeamsSuccess
           if(state is TeamsFailure) {
             return Center(child: Text(state.error));
           }
-          if(state is! TeamsSuccess) {
-            return const Center(child: CircularProgressIndicator.adaptive());
+          if(state is TeamsSuccess) {
+            final easternTeams = state.easternTeams;
+            final westernTeams = state.westernTeams;
+
+            final selectedTeams = _currentIndex == 1 ? easternTeams : westernTeams;
+
+            return TeamsScreen(teams: selectedTeams);
           }
 
-          final easternTeams = state.easternTeams;
-          final westernTeams = state.westernTeams;
-
-          if (_currentIndex == 1) {
-            return TeamsScreen(teams: easternTeams);
-          }
-
-          return TeamsScreen(teams: westernTeams);
+          return const Center(child: CircularProgressIndicator.adaptive());
         })
       ),
       bottomNavigationBar: BottomNavigationBar(
