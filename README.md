@@ -1,7 +1,6 @@
 # HoopsHub
 
-HoopsHub is a mobile application that provides real-time news data about the NBA.
-
+HoopsHub is a mobile application that provides real-time data about the NBA teams, players, and scores.
 
 ## Getting Started
 
