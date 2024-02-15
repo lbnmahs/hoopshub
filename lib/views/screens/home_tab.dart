@@ -17,6 +17,8 @@ class _HomeTabState extends State<HomeTab> {
   
   @override
   Widget build(BuildContext context) {
+    if(_currentIndex == 1) {}
+    
     return Scaffold(
       appBar: AppBar(
         title: const Text('HoopsHub'),
