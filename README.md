@@ -1,6 +1,6 @@
 # HoopsHub
 
-HoopsHub is a mobile application that provides real-time data about the NBA teams, players, and scores.
+HoopsHub is a mobile application that provides real-time data about the NBA teams, players, and scores. The main objective of this project is to understand how to use BLoC state management library.
 
 ## Getting Started
 
