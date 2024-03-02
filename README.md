@@ -1,6 +1,6 @@
 # HoopsHub
 
-HoopsHub is a mobile application that provides real-time data about the NBA teams, players, and scores. The main objective of this project is to understand how to use BLoC state management library.
+HoopsHub is a mobile application that provides real-time data about the NBA teams, players, and scores. The main objective of this project is to understand how to use the BLoC state management library.
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ To run the application, run the following commands
 
 3. Install dependencies
     ```dart
-       flutter pub add http, google_fonts, transparent_image, flutter_bloc
+       flutter pub get
     ```
 
 4. Run the application
